@@ -33,7 +33,13 @@ https://dillinger.io/
 create table walizka( id_walizki int primary key auto_increment, pojemnosc int unsigned, kolor enum('rozowy', 'czerwony', 'teczowy', 'zolty'), id_wlasciciela int, foreign key(id_wlasciciela) references postac(id_postaci) on delete cascade);
 ```
 
-
 ```sql
-describe walizka;
++----------------+---------------------------------------------+------+-----+---------+----------------+
+| Field          | Type                                        | Null | Key | Default | Extra          |
++----------------+---------------------------------------------+------+-----+---------+----------------+
+| id_walizki     | int                                         | NO   | PRI | NULL    | auto_increment |
+| pojemnosc      | int unsigned                                | YES  |     | NULL    |                |
+| kolor          | enum('rozowy','czerwony','teczowy','zolty') | YES  |     | rozowy  |                |
+| id_wlasciciela | int                                         | YES  | MUL | NULL    |                |
++----------------+---------------------------------------------+------+-----+---------+----------------+
 ```
