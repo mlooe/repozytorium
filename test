@@ -1,0 +1,13 @@
+# Zadania lab 04
+## Zadanie 1
+
+Tekst **pogrubiony** lub _kursywa_
+
+```sql
+SELECT * FROM osoba;
+```
+
+```python
+def funkcja():
+  print('Ala ma kota')
+```
