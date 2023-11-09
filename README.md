@@ -26,3 +26,8 @@ Listy wypunktowane:
 
 
 https://dillinger.io/
+
+
+
+
+create table walizka( id_walizki int primary key auto_increment, pojemnosc int unsigned, kolor enum('rozowy', 'czerwony', 'teczowy', 'zolty'), id_wlasciciela int, foreign key(id_wlasciciela) references postac(id_postaci) on delete cascade);
